@@ -6,6 +6,7 @@ using Unity.Burst;
 [BurstCompile]
 public partial struct SpawnerSystem : ISystem
 {
+    [BurstCompile]
     public void OnUpdate(ref SystemState state)
     {
         var ECB = new EntityCommandBuffer(Unity.Collections.Allocator.Temp);

@@ -1,12 +1,12 @@
+using Unity.Burst;
 using Unity.Entities;
 using Unity.Mathematics;
 using UnityEngine;
 
+[BurstCompile]
 public class EnemyAuthoring : MonoBehaviour
 {
     public float MoveSpeed;
-    public float3 EnemyTransform;
-
 
     class EnemyAuthoringBaker : Baker<EnemyAuthoring>
     {
